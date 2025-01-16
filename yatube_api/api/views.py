@@ -10,6 +10,7 @@ from .serializers import (
 )
 from .permissions import OwnerOrReadOnly
 
+
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
